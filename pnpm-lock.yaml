@@ -120,8 +120,8 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-router:
-        specifier: ^6.24.0
-        version: 6.24.0(react@18.3.1)
+        specifier: ^6.28.0
+        version: 6.28.0(react@18.3.1)
       react-router-dom:
         specifier: ^6.24.0
         version: 6.24.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1184,6 +1184,10 @@ packages:
 
   '@remix-run/router@1.17.0':
     resolution: {integrity: sha512-2D6XaHEVvkCn682XBnipbJjgZUU7xjLtA4dGJRBVUKpEaDYOZMENZoZjAOSb7qirxt5RupjzZxz4fK2FO+EFPw==}
+    engines: {node: '>=14.0.0'}
+
+  '@remix-run/router@1.21.0':
+    resolution: {integrity: sha512-xfSkCAchbdG5PnbrKqFWwia4Bi61nH+wm8wLEqfHDyp7Y3dZzgqS2itV8i4gAq9pC2HsTpwyBC6Ds8VHZ96JlA==}
     engines: {node: '>=14.0.0'}
 
   '@sec-ant/readable-stream@0.4.1':
@@ -2439,6 +2443,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -4080,6 +4085,12 @@ packages:
 
   react-router@6.24.0:
     resolution: {integrity: sha512-sQrgJ5bXk7vbcC4BxQxeNa5UmboFm35we1AFK0VvQaz9g0LzxEIuLOhHIoZ8rnu9BO21ishGeL9no1WB76W/eg==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      react: '>=16.8'
+
+  react-router@6.28.0:
+    resolution: {integrity: sha512-HrYdIFqdrnhDw0PqG/AKjAqEqM7AvxCz0DQ4h2W8k6nqmc5uRBYDag0SBxx9iYz5G8gnuNVLzUe13wl9eAsXXg==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       react: '>=16.8'
@@ -6389,6 +6400,8 @@ snapshots:
       config-chain: 1.1.13
 
   '@remix-run/router@1.17.0': {}
+
+  '@remix-run/router@1.21.0': {}
 
   '@sec-ant/readable-stream@0.4.1': {}
 
@@ -9749,6 +9762,11 @@ snapshots:
   react-router@6.24.0(react@18.3.1):
     dependencies:
       '@remix-run/router': 1.17.0
+      react: 18.3.1
+
+  react-router@6.28.0(react@18.3.1):
+    dependencies:
+      '@remix-run/router': 1.21.0
       react: 18.3.1
 
   react@18.3.1:
